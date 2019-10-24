@@ -29,7 +29,7 @@ mongoose.connect(
 // Agar API dapat memproses 
 app.use(express.json())
 app.use(cors())
-app.use(userRoute)
+app.use(userRouter)
 app.use(taskRouter)
 
 app.get('/', (req, res) => {
